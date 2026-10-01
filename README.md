@@ -1,5 +1,7 @@
 # DevSecOps Pipeline
 
+[![CI / Security](https://github.com/EmilAlizada/devsecops-pipeline/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/EmilAlizada/devsecops-pipeline/actions/workflows/ci.yml)
+
 A security-focused reference project demonstrating application delivery, CI/CD, container security, dependency auditing, and secure-by-default configuration around a small Django service.
 
 > Portfolio / learning project. The goal is to make engineering and security decisions visible, reproducible, and easy to review.
