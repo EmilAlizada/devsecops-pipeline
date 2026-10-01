@@ -39,7 +39,7 @@ jobs:
       - run: bandit -q -r config health -x health/tests.py
       - run: pip-audit -r requirements.txt
       - run: docker build --tag devsecops-pipeline:ci .
-      - uses: aquasecurity/trivy-action@0.36.0
+      - uses: aquasecurity/trivy-action@v0.36.0
         with:
           image-ref: devsecops-pipeline:ci
           format: table
