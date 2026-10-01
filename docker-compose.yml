@@ -1,0 +1,29 @@
+services:
+  app:
+    build: .
+    env_file: [.env]
+    environment:
+      DB_ENGINE: postgres
+      POSTGRES_HOST: db
+      POSTGRES_PORT: "5432"
+    ports: ["8000:8000"]
+    depends_on:
+      db:
+        condition: service_healthy
+    read_only: true
+    tmpfs: [/tmp]
+    security_opt: [no-new-privileges:true]
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-devsecops}
+      POSTGRES_USER: ${POSTGRES_USER:-devsecops}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-devsecops-local-only}
+    volumes: [postgres_data:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-devsecops} -d ${POSTGRES_DB:-devsecops}"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+volumes:
+  postgres_data:
