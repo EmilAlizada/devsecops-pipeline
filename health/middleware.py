@@ -6,6 +6,12 @@ class SecurityHeadersMiddleware:
 
     def __call__(self, request):
         response = self.get_response(request)
-        response.setdefault("Content-Security-Policy", "default-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'")
-        response.setdefault("Permissions-Policy", "camera=(), microphone=(), geolocation=()")
+        response.setdefault(
+            "Content-Security-Policy",
+            "default-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+        )
+        response.setdefault(
+            "Permissions-Policy",
+            "camera=(), microphone=(), geolocation=()",
+        )
         return response
