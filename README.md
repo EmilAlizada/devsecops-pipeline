@@ -101,6 +101,14 @@ See [SECURITY.md](SECURITY.md) and [docs/THREAT_MODEL.md](docs/THREAT_MODEL.md).
 - [ ] Disposable deployment stage
 - [ ] Structured logs and observability
 
+## Explore the portfolio
+
+- [Secure Django API](https://github.com/EmilAlizada/secure-django-api)
+- [Kubernetes Security Lab](https://github.com/EmilAlizada/kubernetes-security-lab)
+- [Python Security Toolkit](https://github.com/EmilAlizada/python-security-toolkit)
+
+[GitHub profile](https://github.com/EmilAlizada)
+
 ## Author
 
 **Emil Alizada**  
