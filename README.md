@@ -107,7 +107,7 @@ See [SECURITY.md](SECURITY.md) and [docs/THREAT_MODEL.md](docs/THREAT_MODEL.md).
 - [Kubernetes Security Lab](https://github.com/EmilAlizada/kubernetes-security-lab)
 - [Python Security Toolkit](https://github.com/EmilAlizada/python-security-toolkit)
 
-[GitHub profile](https://github.com/EmilAlizada)
+[Portfolio website](https://emilalizada.github.io/) · [GitHub profile](https://github.com/EmilAlizada)
 
 ## Author
 
